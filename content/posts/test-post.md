@@ -1,7 +1,7 @@
 +++
 title = "Test Blog Post"
 date = 2017-03-03T14:15:59-06:00
-author = "Stanley Nguyen"
+author = "stanleynguyen"
 cover = ""
 tags = ["test", "blog"]
 keywords = ["test", "blog"]
