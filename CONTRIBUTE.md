@@ -39,7 +39,7 @@ Fill in all the necessary fields:
 - showFullContent: please keep this as false to share blog's estate with other authors
 
 Write your blog post in markdown with an enhanced flavor from [hugo](https://gohugo.io/).
-If you are intending to do more than just standard mardown (md), checkout [hugo docs](https://gohugo.io/) to learn more.
+If you are intending to do more than just standard mardown (md), checkout [hugo docs](https://gohugo.io/content-management/) to learn more.
 
 After you are done with your post, please open a [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) on our repository and your post will be up in no time. 🥳🥳
 
