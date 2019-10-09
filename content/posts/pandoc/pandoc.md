@@ -4,7 +4,7 @@ date: 2019-10-09T00:35:20+07:00
 draft: true
 author: "Do Hoang"
 tags: ["pandoc", "presentation", "blog"]
-cover: /post/images/test.png
+cover: "/posts/pandoc/images/test.png"
 keywords: ["pandoc"]
 description: "The Easiest Way to Make Presentations! (Pandoc + Markdown)"
 showFullContent: false
@@ -86,6 +86,6 @@ You can get the latest version on the *[dowload page](https://github.com/jgm/pan
 
 ## Getting started 
 
-![test](images/test.png)
+![test](/posts/pandoc/images/test.png)
 
 
