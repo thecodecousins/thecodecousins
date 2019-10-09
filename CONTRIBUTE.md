@@ -1,7 +1,4 @@
----
-title: 'Contribution Guide to TheCodeCousins'
-author: 'from TheCodeCousins team with love'
----
+# Contribution Guide to TheCodeCousins
 
 First of all, thank you for sharing your ideas, knowledge, opinions 🎉🎉 You are awesome and we love you 😍😍
 
@@ -10,25 +7,25 @@ First of all, thank you for sharing your ideas, knowledge, opinions 🎉🎉 You
 The following is a set of guidelines for contributing to our blog.
 We tried to be as comprehensive as possible, but if you feel that there is more to this, please feel free to propose changes to this in a pull request.
 
-##### Setting up local env
+### Setting up local env
 
 Start by forking this repository and then clone it recursively to your local workspace
 
-{{< highlight bash >}}
+```bash
 git clone https://github.com/YOUR-USERNAME/thecodecousins --recursive
 cd thecodecousins/
-{{</ highlight >}}
+```
 
 Check if you have [hugo](https://gohugo.io) installed by running `hugo version`.
 If you haven't already installed [hugo](https://gohugo.io), please follow the instruction on [their site](https://gohugo.io/getting-started/installing/).
 
-##### Start a new post
+### Start a new post
 
 Generate a new post from our theme template by running
 
-{{< highlight bash >}}
+```bash
 hugo new posts/YOUR-POST-NAME.md
-{{</ highlight >}}
+```
 
 Fill in all the necessary fields:
 
@@ -46,15 +43,15 @@ If you are intending to do more than just standard mardown (md), checkout [hugo 
 
 After you are done with your post, please open a [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) on our repository and your post will be up in no time. 🥳🥳
 
-##### <a name="bonus" id="bonus"></a> Bonus: Author field with metadata
+### <a name="bonus" id="bonus"></a> Bonus: Author field with metadata
 
 This section is for anyone who's looking for a fancier `Author` field at the top of their post instead of just a plain string.
 
 Create an author data for yourself, we recommend using your Github handle as an identifier for consistency and to avoid collision among our contributors
 
-{{< highlight bash >}}
+```bash
 touch data/authors/YOUR-USERNAME.yml
-{{</ highlight >}}
+```
 
 There are 3 fields that you can provide in your author data file:
 
