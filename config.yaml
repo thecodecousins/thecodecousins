@@ -35,8 +35,8 @@ languages:
     menu:
       main:
         - identifier: about
-          name: About
+          name: about
           url: /about
-        - identifier: showcase
-          name: Showcase
-          url: /showcase
+        - identifier: contribute
+          name: contribute
+          url: /contribute
