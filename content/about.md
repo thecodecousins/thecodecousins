@@ -1,5 +1,6 @@
 ---
 title: 'About TheCodeCousins'
+author: 'TheCodeCousins Team'
 ---
 
 As most people would have guessed (or maybe not 🤔), this is a blog space that we two (literal) cousins started.
