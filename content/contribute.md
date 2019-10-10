@@ -51,8 +51,8 @@ Your final product with some static assets would look something like this
 
 ![Example source tree](/example-tree.png)
 
-Then your assets can be included in the post using the full path
-(i.e. for the example, `/test-posts/img/cover.jpg` is the needed path to include the cover image).
+Then your assets can be included in the post using the full path with `content` folder as root
+(i.e. `/posts/test-posts/img/cover.jpg` is the needed path to include the cover image).
 
 ##### Letting us know 🎉🎉
 
