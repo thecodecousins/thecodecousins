@@ -41,8 +41,6 @@ Fill in all the necessary fields:
 Write your blog post in markdown with an enhanced flavor from [hugo](https://gohugo.io/).
 If you are intending to do more than just standard mardown (md), checkout [hugo docs](https://gohugo.io/content-management/) to learn more.
 
-After you are done with your post, please open a [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) on our repository and your post will be up in no time. 🥳🥳
-
 ### Static assets
 
 We intend to use leaf bundle organisation for all posts on [TheCodeCousins](https://thecodecousins.com), which is the reason why you were asked to create a folder with your post name and an index.md for post content.
@@ -56,6 +54,10 @@ Then your assets can be included in the post using the full path
 ### Letting us know 🎉🎉
 
 After you are done with your post, please open a [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) on our repository and your post will be up in no time. 🥳🥳
+
+### Doubts and questions
+
+Please shoot us [a new issue](https://github.com/thecodecousins/thecodecousins/issues/new) labelled `question` on [our repo](https://github.com/thecodecousins/thecodecousins).
 
 ### <a name="bonus" id="bonus"></a> Bonus: Author field with metadata
 
