@@ -14,10 +14,10 @@ We tried to be as comprehensive as possible, but if you feel that there is more 
 
 Start by forking this repository and then clone it recursively to your local workspace
 
-{{< highlight bash >}}
+```bash
 git clone https://github.com/YOUR-USERNAME/thecodecousins --recursive
 cd thecodecousins/
-{{</ highlight >}}
+```
 
 Check if you have [hugo](https://gohugo.io) installed by running `hugo version`.
 If you haven't already installed [hugo](https://gohugo.io), please follow the instruction on [their site](https://gohugo.io/getting-started/installing/).
@@ -26,9 +26,9 @@ If you haven't already installed [hugo](https://gohugo.io), please follow the in
 
 Generate a new post from our theme template by running
 
-{{< highlight bash >}}
+```bash
 hugo new posts/YOUR-POST-NAME.md
-{{</ highlight >}}
+```
 
 Fill in all the necessary fields:
 
@@ -52,9 +52,9 @@ This section is for anyone who's looking for a fancier `Author` field at the top
 
 Create an author data for yourself, we recommend using your Github handle as an identifier for consistency and to avoid collision among our contributors
 
-{{< highlight bash >}}
+```bash
 touch data/authors/YOUR-USERNAME.yml
-{{</ highlight >}}
+```
 
 There are 3 fields that you can provide in your author data file:
 
