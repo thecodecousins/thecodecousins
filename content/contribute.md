@@ -46,7 +46,7 @@ If you are intending to do more than just standard mardown (md), checkout [hugo 
 
 ##### Static assets
 
-We intend to use leaf bundle organisation for all posts on [TheCodeCousins](https://thecodecousins.com), which is the reason why you were asked to create a folder with your post name and an index.md for post content.
+We intend to use leaf bundle organisation for all posts on [TheCodeCousins](https://thecodecousins.com), which is the reason why you were asked to create a folder with your post name and an `index.md` for post content.
 Your final product with some static assets would look something like this
 
 ![Example source tree](/example-tree.png)
