@@ -13,7 +13,7 @@ showFullContent: false
 ## Introduction and Motivation
 ![](/posts/pandoc/images/mdVSw.png)
 
-I have used beamer quite a lot to prepare slides for both research and class presentations. I have started to use LaTeX to content in beamer presentation for two years. But for some time I've been concerned about the high ratio of markup to content in beamer presentations.  used to type thousands lines of code just to create a presentation slide which was tiring and time consuming. Thus, I did some research and found a combination of pandoc, markdown, and LaTeX to simplify my process. In my point of view, markdown syntax is so simple, easy to read and modify and also, pandoc will convert the markdown file into LaTeX file later so that I can deeply customize my presentation slide. 
+I have used beamer quite a lot to prepare slides for both research and class presentations. I have started to use LaTeX to content in beamer presentation for two years. But for some time I've been concerned about the high ratio of markup to content in beamer presentations.  used to type thousands lines of code just to create a presentation slide which was tiring and time consuming. Thus, I did some research and found a combination of pandoc, markdown, and LaTeX to simplify my process. In my point of view, markdown in syntax is straightforward, easy to read and modify. Moreover, pandoc has the ability to convert markdown files into LaTeX, hence enabled me to customise my slides greatly later on.
 
 In this blog, I want to discuss about the creation of beamer presentations using a combination of *markdown, pandoc, and LaTeX*. This workflow offers the potential to reduce typing and increase readability of beamer presentation source code. After reading this blog, you might can create a slide by using both Markdown and LaTeX and without having to lie on Powerpoint. 
 
@@ -95,7 +95,7 @@ You can get the latest version on the *[dowload page](https://github.com/jgm/pan
 ## Getting started 
 ![](/posts/pandoc/images/markdown-markdown-everywhere.jpg) 
 
-We are computer scientist 😍😍😍, as I mentioned before, making an academic presentation without having to write LaTeX ( with tons of syntax,... ) is our main goal. And Pandoc provides us a way to convert between numerous markup and word processing formats, including, but not limited to, various flavors of Markdown, Latex, HTML.
+We are computer scientist 😍😍😍, as I mentioned before, making an academic presentation without having to write LaTeX ( with tons of syntax,... ) is our main goal. Pandoc provides us a way to convert between numerous markup and word processing formats, including, but not limited to, various flavors of Markdown, Latex, HTML.
 
 To create a slide shows with Pandoc is quite simple thus the basic syntax is Markdown which is a familiar language with all developers or computer scientist. 
 
