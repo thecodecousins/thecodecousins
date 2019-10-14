@@ -2,7 +2,7 @@
 title: "How I escaped from Microsoft Office tools as a Computer Science student"
 date: 2019-10-09T00:35:20+07:00
 draft: true
-author: "Do Hoang"
+author: "kn"
 tags: ["pandoc", "presentation", "blog"]
 cover: "/posts/pandoc/images/the-powerpoint-was.jpg"
 keywords: ["pandoc"]
