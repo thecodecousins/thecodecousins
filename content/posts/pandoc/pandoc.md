@@ -37,6 +37,10 @@ templates.
     &rarr; With *Pandoc*, you can be sure you’ve fit the template, and switch
 templates easily.
 
+- Lower ratio of markup to content in beamer presentations comparing to LaTeX.
+- Beautiful.
+- Pretty Math Equation - From my point of view as a researcher.
+
 ## Installation Guide
 
 **Integrated Software**
@@ -91,7 +95,7 @@ You can get the latest version on the *[dowload page](https://github.com/jgm/pan
 ## Getting started 
 ![](/posts/pandoc/images/markdown-markdown-everywhere.jpg) 
 
-But we are computer scientist 😍😍😍, as I mentioned before, making an academic presentation without having to write Latexs ( with tons of syntax,... ) is our main goal. And Pandoc provides us a way to convert between numerous markup and word processing formats, including, but not limited to, various flavors of Markdown, Latex, HTML.
+We are computer scientist 😍😍😍, as I mentioned before, making an academic presentation without having to write LaTeX ( with tons of syntax,... ) is our main goal. And Pandoc provides us a way to convert between numerous markup and word processing formats, including, but not limited to, various flavors of Markdown, Latex, HTML.
 
 To create a slide shows with Pandoc is quite simple thus the basic syntax is Markdown which is a familiar language with all developers or computer scientist. 
 
@@ -250,6 +254,8 @@ But I found that It is quite buggy and you dont really control the width of each
 
 \End{columns}
 ```
+
+**Magical things** is that you can also use Markdown inside a Raw LaTeX code \m/
 
 And this is the result: 
 
