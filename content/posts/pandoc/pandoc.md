@@ -45,7 +45,7 @@ templates easily.
 
 **Integrated Software**
 
-Thus we want to make our slide looks like *Latex* typesets so a Basic Latex packages is required. \
+Thus we want to make our slide looks like *LaTeX* typesets so a Basic LaTeX packages is required. \
 I strongly recommend not just installing the TeX compiler, but *all* TeX packages for your own convenience, so you have everything offline already. This will be a big download at first, but nowadays the storage space should be minimal.
 
 **On GNU/Linux:**
@@ -73,7 +73,7 @@ Download and install the packages *[here](https://tug.org/mactex/)*. Or via Brew
 brew cask install mactex
 ```
 
-After installed Latex, the next step is to get Pandoc - a universal document converter.
+After installed LaTeX, the next step is to get Pandoc - a universal document converter.
 
 **On GNU/Linux**
 
@@ -101,7 +101,7 @@ To create a slide shows with Pandoc is quite simple thus the basic syntax is Mar
 
 Let's create some slide with Pandoc:  🎉🎉🎉
 
-Create a main.md file that contains:
+Create a `main.md` file that contains:
 
 ```markdown
 # Section heading 1 slide
@@ -168,7 +168,7 @@ Pandoc converted *main.md* into a beamer latex file main.tex and after that they
 ## Advanced configuration
 
 #### YAML
-You might want a slide contain a Beamer's theme, author name, presentation name,... - a fully features as LaTeX beamer but written in markdown. To deal with that, we can add some YAML configuration at the beginning of the markdown file. 
+You might want a slide contain a Beamer's theme, author name, presentation name,... - a fully features as LaTeX beamer but written in markdown. To deal with that, we can add some YAML configuration at the beginning of the markdown file.\
 Fill in all the necessary fields:
 
 - title: the presentation's name.
@@ -255,6 +255,16 @@ But I found that It is quite buggy and you dont really control the width of each
 \End{columns}
 ```
 
+But you need to add this code to your YAML file ( I will explain what is this code in the next section)
+```YAML
+header-includes:
+- \newcommand{\hideFromPandoc}[1]{#1}
+- \hideFromPandoc{
+    \let\Begin\begin
+    \let\End\end
+  }
+```
+
 **Magical things** is that you can also use Markdown inside a Raw LaTeX code \m/
 
 And this is the result: 
@@ -263,4 +273,62 @@ And this is the result:
 
 #### Preamble
 
-Need more time for this section :(
+Pandoc lets user to include a custom preamble in the generated output. 
+
+If you just have to use some packages in LaTeX ( not so much ), you can include it in the YAML header inside the `header-includes:` tag. For example I want to use package `multicol` in LaTeX, my header should look like:
+
+```YAML
+header-includes:
+- \usepackage{multicol}
+```
+
+These lines will be included before the document begin in LaTeX file.\
+
+But Preamble in Pandoc give you more features than just to import some packages. We can also create our own PDF template, for presentation, we can re-config the Beamer theme. For example, as the previous example above, I used Ilmenau theme for my slide. By default, It does not have slide numbers ( frame number ). So our goal now is to re-config the theme without changing the theme source code. If you are using LaTeX then it quite easy to deal with that. Either does Pandoc, instead of using `header-includes` tag, we can create a new file called `preamble.tex` - you can put all the configuration in LaTeX to this file the same way you use LaTeX to create a beamer presentation. \
+
+For example, I want to add the frame number to Ilmenau theme. I need to redefine the `footline` template used by the Ilmenau, and also modify the `sections/subsections` in toc allowing you to change the appearance of the sections and subsections in the ToC. At this point, you do need to know a little bit about LaTeX, but you will have your own Beamer Template. You can also change the color, subsection, section,...
+
+```latex
+%%%% Create framenumber in footer
+\newcommand{\frameofframes}{/}
+\newcommand{\setframeofframes}[1]{\renewcommand{\frameofframes}{#1}}
+
+\setframeofframes{of}
+\makeatletter
+\setbeamertemplate{footline}
+  {%
+    \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
+      \leavevmode{\usebeamerfont{author in head/foot}\insertshortauthor}%
+      \hfill%
+      {\usebeamerfont{institute in head/foot}\usebeamercolor[fg]{institute in head/foot}\insertshortinstitute}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+      {\usebeamerfont{title in head/foot}\insertshorttitle}%
+      \hfill%
+      {\usebeamerfont{frame number}\usebeamercolor[fg]{frame number}\insertframenumber~\frameofframes~\inserttotalframenumber}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+    \end{beamercolorbox}
+  }
+```
+
+**Usage**
+
+```bash
+pandoc main.md -H preamble.tex -t beamer -o main.pdf
+```
+
+**Result**\
+Ilmenau theme with frame number and a new look.
+You can download my preamble example [here](https://github.com/huyhoang8398/pandoc-tutorial/blob/master/preamble.tex)
+
+![](/posts/pandoc/images/preambleExample.png)
+
+
+## Source code
+
+You can download all the source code in this blog in this [site](https://github.com/huyhoang8398/pandoc-tutorial/)
