@@ -11,11 +11,21 @@ showFullContent: false
 ---
 
 ## Introduction and Motivation
-![](/posts/pandoc/images/mdVSw.png)
+![Pandoc Markdow presentation VS Microsoft Powerpoint](/posts/pandoc/images/mdVSw.png)
 
-I have used beamer quite a lot to prepare slides for both research and class presentations. I have started to use LaTeX to content in beamer presentation for two years. But for some time I've been concerned about the high ratio of markup to content in beamer presentations.  used to type thousands lines of code just to create a presentation slide which was tiring and time consuming. Thus, I did some research and found a combination of pandoc, markdown, and LaTeX to simplify my process. In my point of view, markdown in syntax is straightforward, easy to read and modify. Moreover, pandoc has the ability to convert markdown files into LaTeX, hence enabled me to customise my slides greatly later on.
+I have used beamer quite a lot to prepare slides for both research and class presentations.</br>
 
-In this blog, I want to discuss about the creation of beamer presentations using a combination of *markdown, pandoc, and LaTeX*. This workflow offers the potential to reduce typing and increase readability of beamer presentation source code. After reading this blog, you might can create a slide by using both Markdown and LaTeX and without having to lie on Powerpoint. 
+I have started to use LaTeX to content in beamer presentation for two years.</br>
+Sometimes I was concerned about the high ratio of markup to content in beamer presentations.</br>
+
+I used to type thousands lines of code just to create a presentation slide which was tiring and time consuming.</br>
+
+Thus, I did some research and found a combination of pandoc, markdown, and LaTeX to simplify my process.</br>
+
+In my point of view, markdown in syntax is straightforward, easy to read and modify. 
+Moreover, pandoc has the ability to convert markdown files into LaTeX, hence enabled me to customise my slides greatly later on.</br>
+
+In this blog, I want to discuss about the creation of beamer presentations using a combination of *markdown, pandoc, and LaTeX*. This workflow offers the potential to reduce typing and increase readability of beamer presentation source code. After reading this blog, you would be able to create a slide by using both Markdown and LaTeX and without having to rely on Powerpoint. 
 
 ## Why Pandoc For Presentation?
 
@@ -45,8 +55,8 @@ templates easily.
 
 **Integrated Software**
 
-Thus we want to make our slide looks like *LaTeX* typesets so a Basic LaTeX packages is required. \
-I strongly recommend not just installing the TeX compiler, but *all* TeX packages for your own convenience, so you have everything offline already. This will be a big download at first, but nowadays the storage space should be minimal.
+Thus we want to make our slide looks like *LaTeX* typesets so a Basic LaTeX package is required. \
+I strongly recommend not just installing the TeX compiler, but *all* TeX packages for your own convenience, so you have everything available offline.
 
 **On GNU/Linux:**
 
@@ -73,11 +83,11 @@ Download and install the packages *[here](https://tug.org/mactex/)*. Or via Brew
 brew cask install mactex
 ```
 
-After installed LaTeX, the next step is to get Pandoc - a universal document converter.
+After installing LaTeX, the next step is to get Pandoc - a universal document converter.
 
 **On GNU/Linux**
 
-For each linux distribution, you might have the different pandoc package's name in your package manager. For example in ArchLinux, we can install pandoc with:
+For each linux distribution, you might have a different pandoc package's name in your package manager. For example in ArchLinux, we can install pandoc with:
 ```bash
 sudo pacman -S pandoc
 ```
@@ -95,9 +105,9 @@ You can get the latest version on the *[dowload page](https://github.com/jgm/pan
 ## Getting started 
 ![](/posts/pandoc/images/markdown-markdown-everywhere.jpg) 
 
-We are computer scientist 😍😍😍, as I mentioned before, making an academic presentation without having to write LaTeX ( with tons of syntax,... ) is our main goal. Pandoc provides us a way to convert between numerous markup and word processing formats, including, but not limited to, various flavors of Markdown, Latex, HTML.
+We are computer scientists 😍😍😍, as I mentioned before, making an academic presentation without having to write LaTeX ( with tons of syntax,... ) is our main goal. Pandoc provides us a way to convert between numerous markups and word processing formats, including, but not limited to, various flavors of Markdown, Latex, HTML.
 
-To create a slide shows with Pandoc is quite simple thus the basic syntax is Markdown which is a familiar language with all developers or computer scientist. 
+To create a slide shows with Pandoc is quite simple because the basic syntax is Markdown which is a familiar language with all developers or computer scientist. 
 
 Let's create some slide with Pandoc:  🎉🎉🎉
 
@@ -127,9 +137,9 @@ Pandoc converted *main.md* into a beamer latex file main.tex and after that they
 
 **Code explaination**
 
-- The first line adds a section tittle. This is not part of the slide, but can be used to generate table of contents, and in slide navigation.
+- The first line adds a section title. This is not part of the slide, but can be used to generate table of contents, and in-slide navigation.
 - The second line creates a new slide with the slide tittle.
-- To create a `itemize` as LaTeX, we can you the same method in markdown.
+- To create a `itemize` as LaTeX, we can use the same method in markdown.
 - Also we can use the same method in markdow to create a figure, table inside a slide.
 
 **Result** 
@@ -168,7 +178,7 @@ Pandoc converted *main.md* into a beamer latex file main.tex and after that they
 ## Advanced configuration
 
 #### YAML
-You might want a slide contain a Beamer's theme, author name, presentation name,... - a fully features as LaTeX beamer but written in markdown. To deal with that, we can add some YAML configuration at the beginning of the markdown file.\
+You might want a slide containing a Beamer's theme, an author name, a presentation name,... -  all of LaTex beamer's feature but written in markdown. To deal with that, we can add some YAML configuration at the beginning of the markdown file.\
 Fill in all the necessary fields:
 
 - title: the presentation's name.
@@ -203,7 +213,7 @@ toc:
     🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
 ![](/posts/pandoc/images/yamlResult1.png) ![](/posts/pandoc/images/yamlResult2.png)
 
-#### Tricks and Tips
+#### Tips and Tricks
 
 **Image Scalling**
 
@@ -221,7 +231,7 @@ Equal to LaTeX
 When no width or height attributes are specified, the fallback is to look at the image resolution and the dpi metadata embedded in the image file.
 
 **Slides with Columns in Pandoc**
-Current versions of pandoc (i.e., pandoc 2.0 and later) supports [fenced divs](https://pandoc.org/MANUAL.html#fenced-divs). Specially named divs are transformed into columns when targeting a slides format:
+Current version of pandoc (i.e., pandoc 2.0 and later) supports [fenced divs](https://pandoc.org/MANUAL.html#fenced-divs). Specially named divs are transformed into columns when targeting a slides format:
 
 ```markdown
 # This slide has columns
@@ -239,7 +249,7 @@ right
 :::
 ```
 
-But I found that It is quite buggy and you dont really control the width of each column easily. Thus We can use both Markdown and LaTeX code inside our main file, so that to create a slide that has columns, I recommend to use raw LaTeX code as the following code below:
+But I found that it is quite buggy and you hard to control the width of each column easily. Thus We can use both Markdown and LaTeX code inside our main file. To create a slide that has columns, I recommend to use raw LaTeX code as the following code below:
 
 ```latex
 \Begin{columns}
@@ -273,9 +283,9 @@ And this is the result:
 
 #### Preamble
 
-Pandoc lets user to include a custom preamble in the generated output. 
+Pandoc lets user include a custom preamble in the generated output. 
 
-If you just have to use some packages in LaTeX ( not so much ), you can include it in the YAML header inside the `header-includes:` tag. For example I want to use package `multicol` in LaTeX, my header should look like:
+If you have to use some packages in LaTeX ( not so much ), you can include it in the YAML header inside the `header-includes:` tag. For example I want to use package `multicol` in LaTeX, my header should look like:
 
 ```YAML
 header-includes:
@@ -284,7 +294,7 @@ header-includes:
 
 These lines will be included before the document begin in LaTeX file.\
 
-But Preamble in Pandoc give you more features than just to import some packages. We can also create our own PDF template, for presentation, we can re-config the Beamer theme. For example, as the previous example above, I used Ilmenau theme for my slide. By default, It does not have slide numbers ( frame number ). So our goal now is to re-config the theme without changing the theme source code. If you are using LaTeX then it quite easy to deal with that. Either does Pandoc, instead of using `header-includes` tag, we can create a new file called `preamble.tex` - you can put all the configuration in LaTeX to this file the same way you use LaTeX to create a beamer presentation. \
+Preamble in Pandoc gives you more features than just to import some packages. We can also create our own PDF template. For presentation, we can re-config the Beamer theme. For example, as the previous example above, I used Ilmenau theme for my slide. By default, It does not have slide numbers ( frame number ). So our goal now is to re-config the theme without changing the theme source code. If you are using LaTeX then it quite easy to deal with that. Either does Pandoc, instead of using `header-includes` tag, we can create a new file called `preamble.tex` - you can put all the configuration in LaTeX to this file the same way you use LaTeX to create a beamer presentation. \
 
 For example, I want to add the frame number to Ilmenau theme. I need to redefine the `footline` template used by the Ilmenau, and also modify the `sections/subsections` in toc allowing you to change the appearance of the sections and subsections in the ToC. At this point, you do need to know a little bit about LaTeX, but you will have your own Beamer Template. You can also change the color, subsection, section,...
 
@@ -326,9 +336,11 @@ pandoc main.md -H preamble.tex -t beamer -o main.pdf
 Ilmenau theme with frame number and a new look.
 You can download my preamble example [here](https://github.com/huyhoang8398/pandoc-tutorial/blob/master/preamble.tex)
 
-![](/posts/pandoc/images/preambleExample.png)
+![Custom Ilmenau theme](/posts/pandoc/images/preambleExample.png)
 
 
 ## Source code
 
 You can download all the source code in this blog in this [site](https://github.com/huyhoang8398/pandoc-tutorial/)
+
+## Reference
