@@ -1,6 +1,8 @@
 ---
 title: 'About TheCodeCousins'
 author: 'TheCodeCousins Team'
+description: 'About TheCodeCousins - a software blog that runs in the true spirit of open-source'
+keywords: ['blog', 'software', 'software-engineering', 'technology', 'code']
 ---
 
 As most people would have guessed (or maybe not 🤔), this is a blog space that we two (literal) cousins started.

@@ -1,4 +1,4 @@
-baseUrl: /
+baseUrl: https://thecodecousins.com/
 languageCode: en-us
 theme: terminal
 paginate: 5
@@ -22,7 +22,8 @@ languages:
     languageName: English
     title: thecodecousins
     subtitle: Anything that's software
-    keywords: ''
+    tagline: A software blog that runs in the true spirit of open-source
+    keywords: 'blog, software, software-engineering, technology, code'
     menuMore: Show more
     readMore: Read more
     readOtherPosts: Read other posts
