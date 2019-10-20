@@ -102,7 +102,7 @@ function dns1111() {
   if [ -e /etc/resolv.conf.bak ]]; then
     mv /etc/resolv.conf.bak /etc/resolv.conf && echo 🚦 🚦 🚦
   else
-    networksetup -setdnsservers Wi-Fi empty
+    cp /etc/resolv.conf /etc/resolv.conf.bak
     echo "nameserver 1.1.1.1
 nameserver 1.0.0.1
 nameserver 2606:4700:4700::1111
