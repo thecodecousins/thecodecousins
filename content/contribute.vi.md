@@ -12,7 +12,7 @@ Chúng tôi đã cố gắng hết sức để tránh thiếu sót, nhưng nếu
 
 ##### Thiết lập môi trường làm việc
 
-Bắt đầu bằng việc fork repo này của chúng tôi về máy tính của bạn
+Bắt đầu bằng việc fork [repo này](https://github.com/thecodecousins/thecodecousins) của chúng tôi về máy tính của bạn
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/thecodecousins --recursive

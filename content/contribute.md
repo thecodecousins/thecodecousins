@@ -12,7 +12,7 @@ We tried to be as comprehensive as possible, but if you feel that there is more 
 
 ##### Setting up local env
 
-Start by forking this repository and then clone it recursively to your local workspace
+Start by forking [this repository](https://github.com/thecodecousins/thecodecousins) and then clone it recursively to your local workspace
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/thecodecousins --recursive
