@@ -17,11 +17,11 @@ We tried to be as comprehensive as possible, but if you feel that there is more 
 >
 > [Doubts and questions](#question)
 
-### <a name="author" id="author"></a> I. Contribute as an author
+## <a name="author" id="author"></a> I. Contribute as an author
 
 Step-by-step guide for your new post to be on [TheCodeCousins](https://thecodecousins.com)
 
-##### Setting up local env
+### Setting up local env
 
 Start by forking this repository and then clone it recursively to your local workspace
 
@@ -33,7 +33,7 @@ cd thecodecousins/
 Check if you have [hugo](https://gohugo.io) installed by running `hugo version`.
 If you haven't already installed [hugo](https://gohugo.io), please follow the instruction on [their site](https://gohugo.io/getting-started/installing/).
 
-##### Start a new post
+### Start a new post
 
 Generate a new post from our theme template by running
 
@@ -55,7 +55,7 @@ Fill in all the necessary fields:
 Write your blog post in markdown with an enhanced flavor from [hugo](https://gohugo.io/).
 If you are intending to do more than just standard mardown (md), checkout [hugo docs](https://gohugo.io/content-management/) to learn more.
 
-##### Static assets
+### Static assets
 
 We intend to use leaf bundle organisation for all posts on [TheCodeCousins](https://thecodecousins.com), which is the reason why you were asked to create a folder with your post name and an index.md for post content.
 Your final product with some static assets would look something like this
@@ -65,20 +65,20 @@ Your final product with some static assets would look something like this
 Then your assets can be included in the post using the full path with `content` folder as root
 (i.e. `/posts/test-posts/img/cover.jpg` is the needed path to include the cover image).
 
-##### Letting us know 🎉🎉
+### Letting us know 🎉🎉
 
 After you are done with your post, please open a [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) labelled `post` on our repository and your post will be up in no time. 🥳🥳
 
-### <a name="translator" id="translator"></a> II. Contribute as a translator
+## <a name="translator" id="translator"></a> II. Contribute as a translator
 
 Step-by-step to make your contribution by translating someone else's post on [TheCodeCousins](https://thecodecousins.com)
 
-##### Seeking permission from original author
+### Seeking permission from original author
 
 Open [an issue](https://github.com/thecodecousins/thecodecousins/issues/new) labelled `translation` with a link in description to the original post on [our repo](https://github.com/thecodecousins/thecodecousins).
 We will connect with the original author and help you obtain their permission 👌👌.
 
-##### Setting up local env
+### Setting up local env
 
 Start by forking this repository and then clone it recursively to your local workspace
 
@@ -90,7 +90,7 @@ cd thecodecousins/
 Check if you have [hugo](https://gohugo.io) installed by running `hugo version`.
 If you haven't already installed [hugo](https://gohugo.io), please follow the instruction on [their site](https://gohugo.io/getting-started/installing/).
 
-##### Create the post in target language
+### Create the post in target language
 
 Identify the post's ID by locating what the containing folder name is (i.e. if the path to markdown file is `/content/posts/example/index.md` then the post's ID is `example`).
 Create the post in target language with the following command after identifying target language's key from [our config file](https://github.com/thecodecousins/thecodecousins/blob/master/config.yaml) (i.e. `vi` for Viet)
@@ -122,7 +122,7 @@ If you are intending to do more than just standard mardown (md), checkout [hugo 
 
 After you are done with your post, please open a [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) labelled `post` and `translation` on our repository and your post will be up in no time. 🥳🥳
 
-### <a name="bonus" id="bonus"></a> III. Bonus: Author field with metadata
+## <a name="bonus" id="bonus"></a> III. Bonus: Author field with metadata
 
 This section is for anyone who's looking for a fancier `Author` field at the top of their post instead of just a plain string.
 
@@ -140,6 +140,6 @@ There are 3 fields that you can provide in your author data file:
 
 Use the corresponding identifier as the `author` field for your post. (i.e., my author data file is `stanleynguyen.yml` then my post's `author` field should be `stanleynguyen`)
 
-### <a name="question" id="question"></a> IV. Doubts and questions
+## <a name="question" id="question"></a> IV. Doubts and questions
 
 Please shoot us [a new issue](https://github.com/thecodecousins/thecodecousins/issues/new) labelled `question` on [our repo](https://github.com/thecodecousins/thecodecousins).

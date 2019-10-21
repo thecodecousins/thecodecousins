@@ -121,7 +121,7 @@ For example, your translated post can be started with "This post was translated 
 Write your blog post in markdown with an enhanced flavor from [hugo](https://gohugo.io/).
 If you are intending to do more than just standard mardown (md), checkout [hugo docs](https://gohugo.io/content-management/) to learn more.
 
-### Letting us know 🎉🎉
+##### Letting us know 🎉🎉
 
 After you are done with your post, please open a [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) labelled `post` and `translation` on our repository and your post will be up in no time. 🥳🥳
 
