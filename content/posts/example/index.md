@@ -1,17 +1,17 @@
 +++
-title = "Test Blog Post"
+title = "Example Blog Post"
 date = 2017-03-03T14:15:59-06:00
 author = "stanleynguyen"
-cover = "/posts/test-post/img/cover.jpg"
-tags = ["test", "blog"]
-keywords = ["test", "blog"]
-description = "This is a test blog post"
+cover = "/posts/example/img/cover.png"
+tags = ["example", "blog"]
+keywords = ["example", "blog"]
+description = "This is an example blog post"
 showFullContent = false
 +++
 
 ### Section 1
 
-This is some test content
+This is some example content
 
 ##### Sub section 1
 
@@ -19,21 +19,29 @@ This is some content for subsection 1
 
 ##### Test Code highlight
 
+Go code with hugo highlight template
+
 {{< highlight go >}}
 a := "some string"
 fmt.Println("lol")
 {{</ highlight >}}
+
+Go code with triple backtick
 
 ```go
 a := "some string"
 fmt.Println("lol")
 ```
 
+JS code with hugo highlight template
+
 {{< highlight js >}}
 const a = "some string"
 console.log("lol")
 const b = () => { return 1; };
 {{</ highlight >}}
+
+JS code with triple backtick
 
 ```js
 const a = 'some string';
