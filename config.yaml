@@ -2,6 +2,7 @@ baseUrl: /
 languageCode: en-us
 theme: terminal
 paginate: 5
+DefaultContentLanguage: en
 
 params:
   # dir name of your blog content (default is `content/posts`)
@@ -11,7 +12,7 @@ params:
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems: 3
   # show selector to switch language
-  showLanguageSelector: false
+  showLanguageSelector: true
   # set theme to full screen width
   fullWidthTheme: false
   # center theme with default width
@@ -19,13 +20,13 @@ params:
 
 languages:
   en:
-    languageName: English
+    languageName: english
     title: thecodecousins
     subtitle: Anything that's software
     keywords: ''
-    menuMore: Show more
-    readMore: Read more
-    readOtherPosts: Read other posts
+    menuMore: show more
+    readMore: read more
+    readOtherPosts: read other posts
 
     params:
       logo:
@@ -40,3 +41,25 @@ languages:
         - identifier: contribute
           name: contribute
           url: /contribute
+  vi:
+    languageName: viet
+    title: thecodecousins
+    subtitle: Miễn là phần mềm
+    keywords: ''
+    menuMore: xem thêm
+    readMore: đọc thêm
+    readOtherPosts: đọc bài khác
+
+    params:
+      logo:
+        logoText: thecodecousins
+        logoHomeLink: /vi
+
+    menu:
+      main:
+        - identifier: about
+          name: giới thiệu
+          url: /vi/about
+        - identifier: contribute
+          name: đóng góp
+          url: /vi/contribute
