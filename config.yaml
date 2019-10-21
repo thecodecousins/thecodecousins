@@ -1,4 +1,4 @@
-baseUrl: https://thecodecousins.com/
+baseUrl: /
 languageCode: en-us
 theme: terminal
 paginate: 5
@@ -16,6 +16,7 @@ params:
   fullWidthTheme: false
   # center theme with default width
   centerTheme: false
+  favicon: /favicon.ico
 
 languages:
   en:
