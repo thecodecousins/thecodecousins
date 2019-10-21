@@ -17,13 +17,15 @@ params:
   fullWidthTheme: false
   # center theme with default width
   centerTheme: false
+  favicon: /favicon.ico
 
 languages:
   en:
     languageName: english
     title: thecodecousins
     subtitle: Anything that's software
-    keywords: ''
+    tagline: A software blog that runs in the true spirit of open-source
+    keywords: 'blog, software, software-engineering, technology, code'
     menuMore: show more
     readMore: read more
     readOtherPosts: read other posts
