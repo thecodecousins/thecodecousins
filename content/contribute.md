@@ -12,7 +12,7 @@ We tried to be as comprehensive as possible, but if you feel that there is more 
 
 ##### Setting up local env
 
-Start by forking this repository and then clone it recursively to your local workspace
+Start by forking [this repository](https://github.com/thecodecousins/thecodecousins) and then clone it recursively to your local workspace
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/thecodecousins --recursive
@@ -46,7 +46,7 @@ If you are intending to do more than just standard mardown (md), checkout [hugo 
 
 ##### Static assets
 
-We intend to use leaf bundle organisation for all posts on [TheCodeCousins](https://thecodecousins.com), which is the reason why you were asked to create a folder with your post name and an index.md for post content.
+We intend to use leaf bundle organisation for all posts on [TheCodeCousins](https://thecodecousins.com), which is the reason why you were asked to create a folder with your post name and an `index.md` for post content.
 Your final product with some static assets would look something like this
 
 ![Example source tree](/example-tree.png)
