@@ -23,7 +23,7 @@ Là những người tin rằng kiến thức nên được chia sẻ miễn ph�
 Chúng tôi sẽ không bao giờ chạy quảng cáo, hay chia sẻ thông tin trên site vào bất cứ một mục đích nào vì lợi nhuận.
 Tư tưởng pen-source đã cho chúng ta một môi trường đầy hợp tác để xây dựng phần mềm dựa trên công sức của nhau.
 Có lí do gì mà chúng ta không dùng nó để chia sẻ kiến thức?
-Nếu bạn đã xem [hướng dẫn của chúng tôi](https://thecodecousins.com/contribute), chắc bạn đã biết chúng tôi nhận đóng góp bằng pull requests, thứ cốt yếu giúp cho việc đóng góp vào open-source dễ dàng.
+Nếu bạn đã xem [hướng dẫn của chúng tôi](/vi/contribute), chắc bạn đã biết chúng tôi nhận đóng góp bằng pull requests, thứ cốt yếu giúp cho việc đóng góp vào open-source dễ dàng.
 Không chỉ pull requests, chúng tôi còn dùng rất nhiều công cụ open-source khác như [hugo](https://gohugo.io/), hay là [Github Pages](https://pages.github.com/).
 **TheCodeCousins đơn giản là một dự án open-source, cũng giống như [Nền Tảng Linux](https://github.com/torvalds/linux).**
 Mặc dù nó chắc sẽ chẳng bao giờ có số người đóng góp ∞ như nền tảng Linux, chúng tôi tin rằng TheCodeCousins sẽ mãi luôn mang một tinh thần open-source!! 🚀🚀🚀
