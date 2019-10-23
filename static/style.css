@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-header {
+  width: 100%;
+}
+.content-header .tag {
+  opacity: 0.5;
+  text-decoration: none;
+}
