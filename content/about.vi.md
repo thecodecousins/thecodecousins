@@ -1,6 +1,5 @@
 ---
 title: 'Giới thiệu về TheCodeCousins'
-author: 'TheCodeCousins Team'
 description: 'Giới thiệu về TheCodeCousins - Blog về phần mềm hoạt động trên tinh thần open-source'
 keywords: ['blog', 'software', 'phần-mềm', 'công-nghệ', 'code']
 ---

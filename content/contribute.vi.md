@@ -1,6 +1,5 @@
 ---
 title: 'Đóng góp bài viết cho TheCodeCousins'
-author: 'from TheCodeCousins team with love'
 description: 'Hướng dẫn đóng góp cho TheCodeCousins'
 keywords: ['blog', 'software', 'phần-mềm', 'công-nghệ', 'code']
 ---

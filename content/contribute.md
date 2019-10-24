@@ -1,6 +1,5 @@
 ---
 title: 'Contribution Guide to TheCodeCousins'
-author: 'from TheCodeCousins team with love'
 description: 'Contribution Guide to TheCodeCousins'
 keywords: ['blog', 'software', 'software-engineering', 'technology', 'code']
 ---

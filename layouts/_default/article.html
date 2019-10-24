@@ -5,16 +5,14 @@
       <span class="post-date">
         {{ .Date.Format "2006-01-02" }}
       </span>
-      <span class="post-author">:: 
       {{ if isset .Params "authors" }}
+      <span class="post-author">:: 
         {{ range $i, $a := .Params.authors }}
           {{ if ne $i 0 }} & {{ end }}
           {{ partial "author.html" (dict "SiteData" $.Site.Data "Author" $a) }}
         {{ end }}
-      {{ else }}
-        Unknown
-      {{ end }}
       </span>
+      {{ end }}
     </div>
 
     {{ if .Params.tags }}
