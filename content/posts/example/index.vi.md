@@ -1,7 +1,7 @@
 +++
 title = "Bài viết ví dụ"
 date = 2017-03-03T14:15:59-06:00
-author = "stanleynguyen"
+authors = ["stanleynguyen", "Hoang Do"]
 cover = "/posts/example/img/cover.png"
 tags = ["example", "blog"]
 keywords = ["example", "blog"]

@@ -5,29 +5,23 @@
       <span class="post-date">
         {{ .Date.Format "2006-01-02" }}
       </span>
-      {{ if isset .Params "author" }}
       <span class="post-author">:: 
-        {{ if isset .Site.Data "authors" }}
-          {{ $author := index .Site.Data.authors .Params.author }}
-          {{ if $author }}
-            <a href="{{ $author.url }}" target="_blank" />{{ $author.name }}</a>
-          {{ else }}
-            {{ .Params.author }}
-          {{ end }}
-        {{ else }}
-          {{ .Params.author }}
+      {{ if isset .Params "authors" }}
+        {{ range $i, $a := .Params.authors }}
+          {{ if ne $i 0 }} & {{ end }}
+          {{ partial "author.html" (dict "SiteData" $.Site.Data "Author" $a) }}
         {{ end }}
       {{ else }}
         Unknown
-      </span>
       {{ end }}
+      </span>
     </div>
 
     {{ if .Params.tags }}
     <span class="post-tags">
       {{ range .Params.tags }}
-      #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
-        {{- . -}}
+      <a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+        #{{- . -}}
       </a>&nbsp;
       {{ end }}
     </span>

@@ -68,5 +68,6 @@ languages:
           name: đóng góp
           url: /vi/contribute
 
-taxnomy:
+taxonomies:
+  author: authors
   tag: tags
