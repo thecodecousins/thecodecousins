@@ -13,7 +13,7 @@ We tried to be as comprehensive as possible, but if you feel that there is more 
 >
 > [Contribute as a translator](#translator)
 >
-> [Bonus: Fancy author field](#bonus)
+> [Bonus: Fancy author profile](#bonus)
 >
 > [Doubts and questions](#question)
 
@@ -45,7 +45,7 @@ Fill in all the necessary fields:
 
 - title: try to keep it short and captivating.
 - date: must be in [ISO-8601 format](https://en.wikipedia.org/wiki/ISO_8601), [this timestamp generator](https://timestampgenerator.com/) might come handy for such.
-- author: your full/pen name. For a fancier post author, head down to [bonus section](#bonus)
+- authors: A collection (array) of post authors' full/pen names. For fancy authors' profiles, head down to [bonus section](#bonus)
 - cover: image that will be shown in preview and at the top of your post
 - tags: topics of your post
 - keywords: same as tags but can be more specific
@@ -105,7 +105,7 @@ Fill in all the necessary fields:
 
 - title: translation from original post
 - date: must be in [ISO-8601 format](https://en.wikipedia.org/wiki/ISO_8601), [this timestamp generator](https://timestampgenerator.com/) might come handy for such.
-- author: your full/pen name. For a fancier post author, head down to [bonus section](#bonus)
+- authors: A collection (array) of post authors' full/pen names. For fancy authors' profiles, head down to [bonus section](#bonus)
 - cover: same as original post's
 - tags: same as or translated from original post's
 - keywords: same as or translated from original post's
@@ -122,14 +122,14 @@ If you are intending to do more than just standard mardown (md), checkout [hugo 
 
 After you are done with your post, please open a [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) labelled `post` and `translation` on our repository and your post will be up in no time. 🥳🥳
 
-## <a name="bonus" id="bonus"></a> III. Bonus: Author field with metadata
+## <a name="bonus" id="bonus"></a> III. Bonus: Fancy author profile
 
-This section is for anyone who's looking for a fancier `Author` field at the top of their post instead of just a plain string.
+This section is for anyone who's looking for a fancier `Author` profile page rather than just a page with your list of posts.
 
 Create an author data for yourself, we recommend using your Github handle as an identifier for consistency and to avoid collision among our contributors
 
 ```bash
-touch data/authors/YOUR-USERNAME.yml
+touch data/authors/YOUR-USERNAME.yaml
 ```
 
 There are 3 fields that you can provide in your author data file:
@@ -138,7 +138,7 @@ There are 3 fields that you can provide in your author data file:
 - url: link to your online profile
 - bio: short intro of yourself, please keep it under 50 characters
 
-Use the corresponding identifier as the `author` field for your post. (i.e., my author data file is `stanleynguyen.yml` then my post's `author` field should be `stanleynguyen`)
+Use the corresponding identifier for the values in `authors` field of your post. (i.e., my author data file is `stanleynguyen.yaml` then my post's `authors` field should include `stanleynguyen`)
 
 ## <a name="question" id="question"></a> IV. Doubts and questions
 
