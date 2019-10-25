@@ -60,7 +60,7 @@ If you are intending to do more than just standard mardown (md), checkout [hugo 
 We intend to use leaf bundle organisation for all posts on [TheCodeCousins](https://thecodecousins.com), which is the reason why you were asked to create a folder with your post name and an index.md for post content.
 Your final product with some static assets would look something like this
 
-![Example source tree](/example-tree.png)
+![Example source tree](static/example-tree.png)
 
 Then your assets can be included in the post using the full path with `content` folder as root
 (i.e. `/posts/test-posts/img/cover.jpg` is the needed path to include the cover image).
