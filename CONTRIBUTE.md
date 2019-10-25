@@ -124,7 +124,7 @@ After you are done with your post, please open a [Pull Request](https://github.c
 
 ## <a name="bonus" id="bonus"></a> III. Bonus: Fancy author profile
 
-This section is for anyone who's looking for a fancier `Author` profile page rather than just a page with your list of posts.
+This section is for anyone who's looking for a fancier `Author` profile page rather than just a page with your list of posts when readers click on your post's author name.
 
 Create an author data for yourself, we recommend using your Github handle as an identifier for consistency and to avoid collision among our contributors
 
@@ -135,6 +135,7 @@ touch data/authors/YOUR-USERNAME.yaml
 There are 3 fields that you can provide in your author data file:
 
 - name: self-explanatory 😁😆
+- img: your profile picture (also use your Github handle for naming), can be put inside `/static` folder and referred from root of TheCodeCousins site (i.e. location `/static/stanleynguyen.jpg`, referred as `/stanleynguyen.jpg` in author data file)
 - url: link to your online profile
 - bio: short intro of yourself, please keep it under 50 characters
 

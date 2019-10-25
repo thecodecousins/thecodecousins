@@ -17,7 +17,7 @@ Chúng tôi đã cố gắng hết sức để tránh thiếu sót, nhưng nếu
 >
 > [Đóng góp bằng dịch thuật](#translator)
 >
-> [Bonus: Mục tác giả kèm metadata](#bonus)
+> [Bonus: Trang cá nhân của tác giả](#bonus)
 >
 > [Hỏi đáp thắc mắc](#question)
 
@@ -49,7 +49,7 @@ hugo new posts/YOUR-POST-NAME/index.vi.md # Chúng tôi sẽ giải thích vì s
 
 - title: chủ để của bài - hãy viết nó ngắn và hay.
 - date: bạn phải dùng [định dạng ISO-8601](https://vi.wikipedia.org/wiki/ISO_8601), hãy dùng [máy tạo dấu thời gian](https://timestampgenerator.com/) này để theo đúng tiêu chuẩn một cách dễ dàng.
-- author: tên hoặc biệt hiệu của bạn. Nếu bạn muốn một bút ký hay hơn, hãy làm theo hướng dẫn ở [phần sau](#bonus)
+- authors: Danh sách tên hoặc biệt hiệu của các tác gỉa bài viết. Nếu bạn muốn trang tác giả của mình, hãy làm theo hướng dẫn ở [phần sau](#bonus)
 - cover: bức ảnh sẽ được hiển thị ở trang chủ và đầu bài viết của bạn.
 - tags: những chủ đề chính của bài
 - keywords: như trên nhưng cụ thể hơn
@@ -97,7 +97,7 @@ hugo new posts/<POST-ID>/index.<LANGUAGE-KEY>.md
 
 - title: dịch từ bài gốc
 - date: bạn phải dùng [định dạng ISO-8601](https://vi.wikipedia.org/wiki/ISO_8601), hãy dùng [máy tạo dấu thời gian](https://timestampgenerator.com/) này để theo đúng tiêu chuẩn một cách dễ dàng.
-- author: tên hoặc biệt hiệu của bạn. Nếu bạn muốn một bút ký hay hơn, hãy làm theo hướng dẫn ở [phần sau](#bonus)
+- authors: Danh sách tên hoặc biệt hiệu của các tác gỉa bài viết. Nếu bạn muốn trang tác giả của mình, hãy làm theo hướng dẫn ở [phần sau](#bonus)
 - cover: lấy từ bài gốc
 - tags: lấy hoặc dịch từ bài gốc
 - keywords: lấy hoặc dịch từ bài gốc
@@ -114,19 +114,20 @@ Nếu bạn không chỉ muốn dùng markdown (md) cơ bản, xem thêm [bản 
 
 Sau khi hoàn thành bài viết, hãy mở một [Pull Request](https://github.com/thecodecousins/thecodecousins/compare) trên repo của chúng tôi và bài viết của bạn sẽ nhanh chóng được đăng. 🥳🥳
 
-##### <a name="bonus" id="bonus"></a> III. Bonus: Mục tác giả kèm metadata
+##### <a name="bonus" id="bonus"></a> III. Bonus: Trang cá nhân của tác giả
 
-Phần này dành cho những ai muốn mục `Author` trên bài của mình thêm phần sinh động thay vì một cái string đơn điệu.
+Phần này dành cho những ai muốn một trang tác giả đẹp hơn là chỉ một danh sách bài viết đơn điệu khi người đọc click vào tên tác giả trên bài của mình.
 
 Dùng tên tài khoản Github của bạn để tạo một file tác giả để tránh đụng hàng với các tác giả khác.
 
 ```bash
-touch data/authors/YOUR-USERNAME.yml
+touch data/authors/YOUR-USERNAME.yaml
 ```
 
 Có 3 thông tin mà bạn có thể điền trong file tác giả của mình:
 
 - name: cái này chắc ai cũng hiểu 😁😆
+- img: avatar của bạn (cũng dùng tên tài khoản Github), để file ở trong tệp `/static` và dẫn link đến từ gốc của TheCodeCousins (v.d. nếu file ở `/static/stanleynguyen.jpg`, hãy dùng đường link `/stanleynguyen.jpg` trong file tác giả)
 - url: đường link đến trang cá nhân của bạn
 - bio: giới thiệu ngắn về bản thân, dưới 50 chữ
 
