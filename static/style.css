@@ -32,6 +32,7 @@
 .profile-container-pic .profile-pic {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 4px;
 }
 
 .profile-container-info {

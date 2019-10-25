@@ -1,4 +1,4 @@
-{{ if isset .SiteData "authors" }}
+{{ if and (isset .SiteData "authors") .Author }}
     {{ $author := index .SiteData.authors .Author }}
     {{ if $author }}
         <div class="content-header author-profile center">
@@ -13,11 +13,11 @@
         </div>
     {{ else }}
         <div class="content-header">
-            Posts by <a href="{{ (urlize (printf "authors/%s/" .Author )) | absLangURL }}" />{{ .Author }}</a>
+            <h3>{{ i18n "post_by" }} <a href="{{ (urlize (printf "authors/%s/" .Author )) | absLangURL }}" />{{ .Author }}</a></h3>
         </div>
     {{ end }}
 {{ else }}
     <div class="content-header">
-        Posts by <a href="{{ (urlize (printf "authors/%s/" .Author )) | absLangURL }}" />{{ .Author }}</a>
+        <h3>{{ i18n "post_by" }} <a href="{{ (urlize (printf "authors/%s/" .Author )) | absLangURL }}" />{{ .Author }}</a></h3>
     </div>
 {{ end }}

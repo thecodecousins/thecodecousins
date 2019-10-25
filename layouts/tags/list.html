@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="content-header">
 <h3>
-    Posts tagged with <a class="tag" href="{{ (urlize (printf "/tags/%s/" .Data.Term )) | absLangURL }}">#{{ .Data.Term }}</a></span>
+    {{ i18n "post_tagged_with" }} <a class="tag" href="{{ (urlize (printf "/tags/%s/" .Data.Term )) | absLangURL }}">#{{ .Data.Term }}</a></span>
 </h3>
 </div>
 <div class="posts">
