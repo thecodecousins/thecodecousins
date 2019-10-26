@@ -92,22 +92,33 @@ Now I can easily switch back and forth between 1.1.1.1 and default DNS configs w
 
 ### Bonus: Linux based machine
 
-Since `networksetup` is not available not Linux based OSes, we would need to modify `/etc/resolv.conf` directly to add & remove the alternate DNS.
+Since `networksetup` is not available not Linux based OSes, we would need to use a different package that helps handle DNS nameservers called `dnsmasq`.
+
+Install it using your distro's package manager
+
+```bash
+# this is for Ubuntu
+sudo apt-get install dnsmasq
+```
+
+Installing the package will come with a config file `/etc/dnsmasq.conf` for us to update the nameservers.
 I have included my implementation below.
 If you have a better approach, don't hesitate to reach out to me at [hung.ngn.the@gmail.com](mailto:hung.ngn.the@gmail.com)
 
 ```bash
 function dns1111() {
   # detect existence of the backup file to see whether the config is in place
-  if [ -e /etc/resolv.conf.bak ]]; then
-    mv /etc/resolv.conf.bak /etc/resolv.conf && echo 🚦 🚦 🚦
+  if [ -e /etc/dnsmasq.conf.bak ]]; then
+    sudo mv /etc/dnsmasq.conf.bak /etc/dnsmasq.conf && echo 🚦 🚦 🚦
   else
-    cp /etc/resolv.conf /etc/resolv.conf.bak
-    echo "nameserver 1.1.1.1
-nameserver 1.0.0.1
-nameserver 2606:4700:4700::1111
-nameserver 2606:4700:4700::1001" >> /etc/resolv.conf
-    && echo 🚀 🚀 🚀
+    sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.bak && \
+    sudo echo "server=1.1.1.1
+server=1.0.0.1
+server=2606:4700:4700::1111
+server=2606:4700:4700::1001" >> /etc/resolv.conf && \
+    sudo service dnsmasq restart && \
+    sudo service network-manager restart && \
+    echo 🚀 🚀 🚀
   fi
 }
 ```
