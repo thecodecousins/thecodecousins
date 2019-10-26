@@ -1,7 +1,7 @@
 +++
 title = "Quick terminal-based DNS switching"
 date = "2019-10-19T14:53:23.322Z"
-author = "stanleynguyen"
+authors = ["stanleynguyen"]
 cover = "/posts/dns-command/img/cover.png"
 tags = ["dns", "privacy", "terminal", "network"]
 keywords = ["dns", "privacy", "terminal", "bash", "network", "nameserver"]
@@ -33,7 +33,7 @@ But more than just that, it is a **privacy-first** DNS server.
 Did you think only these companies like Google, Facebook trying to track all of your activities online (which can be blocked with the awesome [Privacy Badger](https://www.eff.org/privacybadger))?
 Your ISP also eavedrops on whichever site you are visiting and sell these data to target you with ads, and they do it through, guess what, DNS resolvers!
 
-1.1.1.1 protects you from all of that for a price of \$0 (yes, you read that right)
+1.1.1.1 protects you from all of that for a price of \$0 (yes, you read that right).
 A **FREE**, fast, secure DNS server that respects your privacy - sounds too good to be true, doesn't it? But it's an effort towards building a better Internet.
 You don't have to take my words for that, read more about it on [Cloudflare's](https://blog.cloudflare.com/announcing-1111/) and [APNIC's](https://labs.apnic.net/?p=1127) blogs.
 
