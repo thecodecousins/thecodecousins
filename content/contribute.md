@@ -141,7 +141,7 @@ There are 3 fields that you can provide in your author data file:
 - name: self-explanatory 😁😆
 - img: your profile picture (also use your Github handle for naming), can be put inside `/static` folder and referred from root of TheCodeCousins site (i.e. location `/static/stanleynguyen.jpg`, referred as `/stanleynguyen.jpg` in author data file)
 - url: link to your online profile
-- bio: short intro of yourself, please keep it under 50 characters
+- bio: short intro of yourself, please keep it under 100 characters
 
 Use the corresponding identifier for the values in `authors` field of your post. (i.e., my author data file is `stanleynguyen.yaml` then my post's `authors` field should include `stanleynguyen`)
 

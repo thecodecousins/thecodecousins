@@ -129,7 +129,7 @@ Có 3 thông tin mà bạn có thể điền trong file tác giả của mình:
 - name: cái này chắc ai cũng hiểu 😁😆
 - img: avatar của bạn (cũng dùng tên tài khoản Github), để file ở trong tệp `/static` và dẫn link đến từ gốc của TheCodeCousins (v.d. nếu file ở `/static/stanleynguyen.jpg`, hãy dùng đường link `/stanleynguyen.jpg` trong file tác giả)
 - url: đường link đến trang cá nhân của bạn
-- bio: giới thiệu ngắn về bản thân, dưới 50 chữ
+- bio: giới thiệu ngắn về bản thân, dưới 100 chữ
 
 Sau đó hãy diền tên file vào mục `author` của bài viết. (ví dụ, file tác giả của mình là `stanleynguyen.yml` thì trong bài viết của mình mục `author` sẽ là `stanleynguyen`)
 
