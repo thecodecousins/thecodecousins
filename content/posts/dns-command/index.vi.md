@@ -116,7 +116,7 @@ function dns1111() {
     sudo echo "server=1.1.1.1
 server=1.0.0.1
 server=2606:4700:4700::1111
-server=2606:4700:4700::1001" >> /etc/resolv.conf && \
+server=2606:4700:4700::1001" >> /etc/dnsmasq.conf && \
     sudo service dnsmasq restart && \
     sudo service network-manager restart && \
     echo 🚀 🚀 🚀
