@@ -38,6 +38,7 @@
 .profile-container-info {
   flex: 2 0 400px;
   margin: 20px 0;
+  max-width: 100%;
 }
 .profile-container-info *:first-child {
   margin-top: 0;
