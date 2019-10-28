@@ -1,6 +1,8 @@
 ---
 title: 'Đóng góp bài viết cho TheCodeCousins'
 author: 'from TheCodeCousins team with love'
+description: 'Hướng dẫn đóng góp cho TheCodeCousins'
+keywords: ['blog', 'software', 'phần-mềm', 'công-nghệ', 'code']
 ---
 
 Đầu tiên, cảm ơn bạn vì đã muốn chia sẻ ý tưởng, hiểu biết, và quan điểm của mình 🎉🎉 Bạn là một người tuyệt vời và chúng tôi yêu bạn 😍😍

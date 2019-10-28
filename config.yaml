@@ -47,6 +47,8 @@ languages:
     languageName: viet
     title: thecodecousins
     subtitle: Miễn là phần mềm
+    tagline: Blog về phần mềm hoạt động trên tinh thần open-source
+    keywords: 'blog, software, phần-mềm, công-nghệ, code'
     keywords: ''
     menuMore: xem thêm
     readMore: đọc thêm
