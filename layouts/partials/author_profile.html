@@ -1,0 +1,23 @@
+{{ if and (isset .SiteData "authors") .Author }}
+    {{ $author := index .SiteData.authors .Author }}
+    {{ if $author }}
+        <div class="content-header author-profile center">
+            <div class="profile-container-pic">
+                <img class="profile-pic" src="{{ if $author.img }}{{ $author.img }}{{ else }}/placeholder.png{{ end }}" />
+            </div>
+            <div class="profile-container-info">
+                <h4>{{ $author.name }}</h4>
+                <a href="{{ $author.url }}">{{ $author.url }}</a>
+                <p>{{ $author.bio }}</p>
+            </div>
+        </div>
+    {{ else }}
+        <div class="content-header">
+            <h3>{{ i18n "post_by" }} <a href="{{ (urlize (printf "authors/%s/" .Author )) | absLangURL }}" />{{ .Author }}</a></h3>
+        </div>
+    {{ end }}
+{{ else }}
+    <div class="content-header">
+        <h3>{{ i18n "post_by" }} <a href="{{ (urlize (printf "authors/%s/" .Author )) | absLangURL }}" />{{ .Author }}</a></h3>
+    </div>
+{{ end }}

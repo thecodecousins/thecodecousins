@@ -67,3 +67,7 @@ languages:
         - identifier: contribute
           name: đóng góp
           url: /vi/contribute
+
+taxonomies:
+  author: authors
+  tag: tags
