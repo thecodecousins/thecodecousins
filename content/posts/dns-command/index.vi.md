@@ -5,7 +5,7 @@ authors = ["stanleynguyen"]
 cover = "/posts/dns-command/img/cover.png"
 tags = ["dns", "privacy", "terminal", "network"]
 keywords = ["dns", "privacy", "terminal", "bash", "network", "nameserver"]
-description = "A quick guide to switching DNS servers settings to tackle nameserver blocking & corporate proxy"
+description = "Hướng dẫn thay đổi máy chủ DNS nhanh chóng bằng dòng lệnh để không bị chặn bởi điểm truy cập"
 showFullContent = false
 +++
 
