@@ -31,9 +31,9 @@ Before starting with explaining what I did in the next section, I would like to 
 It's an effort to provide Internet users with a faster and more secure DNS (it is more than 2x faster than Google Public DNS 🚀🚀🚀).
 But more than just that, it is a **privacy-first** DNS server.
 Did you think only these companies like Google, Facebook trying to track all of your activities online (which can be blocked with the awesome [Privacy Badger](https://www.eff.org/privacybadger))?
-Your ISP also eavedrops on whichever site you are visiting and sell these data to target you with ads, and they do it through, guess what, DNS resolvers!
+Your ISP also eavesdrops on whichever site you are visiting and sell these data to target you with ads, and they do it through, guess what, DNS resolvers!
 
-1.1.1.1 protects you from all of that for a price of \$0 (yes, you read that right).
+1.1.1.1 protects you from all of that for a price of $0 (yes, you read that right).
 A **FREE**, fast, secure DNS server that respects your privacy - sounds too good to be true, doesn't it? But it's an effort towards building a better Internet.
 You don't have to take my words for that, read more about it on [Cloudflare's](https://blog.cloudflare.com/announcing-1111/) and [APNIC's](https://labs.apnic.net/?p=1127) blogs.
 
@@ -58,7 +58,7 @@ Now I can easily configure my DNS resolvers to be the same as the instructions f
 networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
 ```
 
-But this is quite lengthy to type as well, even though I would prefer this over Network Preferences UI any day. So I went an another level of laziness by wrapping it inside a bash function
+But this is quite lengthy to type as well, even though I would prefer this over Network Preferences UI any day. So I went another level of laziness by wrapping it inside a bash function
 
 ```bash
 function dns1111() {
