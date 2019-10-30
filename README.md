@@ -1,10 +1,10 @@
 # TheCodeCousins
 
-<div style="text-align: center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/thecodecousins/thecodecousins/master/docs/p.png">
   <br/>
-  <p style="font-style: italic; color: #a9a9a9">Our mascot Platunix (or P for short) by <a href="https://issuu.com/jennifergautama/docs" target="_blank">Jennifer Gautama</a></p>
-</div>
+  <i>Our mascot Platunix (or P for short) by <a href="https://issuu.com/jennifergautama/docs" target="_blank">Jennifer Gautama</a></i>
+</p>
 
 As most people would have guessed (or maybe not 🤔), this is a blog space that we two (literal) cousins started.
 We have long always wanted to share our ideas on "literally anything that's software".
