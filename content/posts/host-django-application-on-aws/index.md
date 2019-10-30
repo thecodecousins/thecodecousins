@@ -1,8 +1,14 @@
 ---
 title: "Host Django Application on AWS"
-date: 2019-10-20T11:45:28+08:00
-draft: true
+date: 2019-10-30T21:30:28+08:00
+authors: ["vivekkalyan"]
+showFullContent: false
+tags: ["aws", "hosting", "django"]
+keywords: ["aws", "hosting", "django", "cloud"]
+description: "Setting up an AWS server for django application"
 ---
+
+NOTE: This is a cross-posted post from my [personal website](https://www.vivekkalyan.com/host-django-application-on-aws-for-free).
 
 This is an easy and efficient way to get your Django application hosted on AWS for free. I documented these steps while deploying [Contikey](https://github.com/stanleynguyen/contikey), an application to share articles between friends.
 
@@ -197,7 +203,7 @@ server {
   }
 ```
 
-`$ sudo ln -s /etc/nginx/sites-available/your_app/etc/nginx/sites-enabled/`
+`$ sudo ln -s /etc/nginx/sites-available/your_app /etc/nginx/sites-enabled/`
 
 `$ sudo nginx -t`
 
