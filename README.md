@@ -1,7 +1,7 @@
 # TheCodeCousins
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/thecodecousins/thecodecousins/master/docs/p.png">
+  <img src="https://raw.githubusercontent.com/thecodecousins/thecodecousins/master/docs/img/p.png">
   <br/>
   <i>Our mascot Platunix (or P for short) by <a href="https://issuu.com/jennifergautama/docs" target="_blank">Jennifer Gautama</a></i>
 </p>
