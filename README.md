@@ -1,5 +1,11 @@
 # TheCodeCousins
 
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/thecodecousins/thecodecousins/master/docs/p.png">
+  <br/>
+  <p style="font-style: italic; color: #a9a9a9">Our mascot Platunix (or P for short) by <a href="https://issuu.com/jennifergautama/docs" target="_blank">Jennifer Gautama</a></p>
+</div>
+
 As most people would have guessed (or maybe not 🤔), this is a blog space that we two (literal) cousins started.
 We have long always wanted to share our ideas on "literally anything that's software".
 Anyone and everyone is welcomed here for knowledge, ideas, and lame jokes (probably?).
@@ -34,3 +40,11 @@ For theme and site engine, please open a PR in [our theme repo](https://github.c
 ### Code of Conduct
 
 Be nice and respectful 🙆🙆‍♂️
+
+### Our Contributors ✨
+
+<a href="https://github.com/thecodecousins/thecodecousins/graphs/contributors">
+  <img src="https://contributors-img.firebaseapp.com/image?repo=thecodecousins/thecodecousins" />
+</a>
+
+Made with [contributors-img](https://contributors-img.firebaseapp.com).
