@@ -1,7 +1,7 @@
 ---
 title: "Git Revert to a Good Commit"
 date: 2019-12-01T14:28:16+07:00
-author: "kn"
+authors: ["kn"]
 tags: ["git", "trick", "blog"]
 keywords: ["git"]
 description: "How to revert to a good commit"
