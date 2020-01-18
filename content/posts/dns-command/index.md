@@ -119,3 +119,20 @@ function dns1111() {
   fi
 }
 ```
+
+**Test**
+To do a lookup speed test choose a website that has not been visited since dnsmasq has been started (`drill` is part of the `ldns` package):
+```bash
+$ drill archlinux.org | grep "Query time"
+```
+Running the command again will use the cached DNS IP and result in a faster lookup time if dnsmasq is setup correctly:
+
+```bash
+$ drill archlinux.org | grep "Query time"
+
+;; Query time: 18 msec
+
+$ drill archlinux.org | grep "Query time"
+
+;; Query time: 2 msec
+```

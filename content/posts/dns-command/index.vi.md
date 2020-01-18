@@ -120,3 +120,19 @@ function dns1111() {
   fi
 }
 ```
+
+**Kiểm tra**
+Để thực hiện kiểm tra tốc độ tra cứu, hãy chọn một trang web chưa được truy cập kể từ khi bạn bắt đầu chạy dnsmasq (`drill` là một phần của gói `ldns`):
+```bash
+$ drill archlinux.org | grep "Query time"
+```
+Chạy lại lệnh sẽ sử dụng IP DNS được lưu trong bộ nhớ cache và kết quả là thời gian tra cứu nhanh hơn nếu dnsmasq được thiết lập chính xác:
+```bash
+$ drill archlinux.org | grep "Query time"
+
+;; Query time: 18 msec
+
+$ drill archlinux.org | grep "Query time"
+
+;; Query time: 2 msec
+```
