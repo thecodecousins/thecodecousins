@@ -1,5 +1,5 @@
 +++
-title = 'Building my Github Action to develier doggoes to PRs'
+title = 'Building my Github Action to deliver doggoes to PRs'
 date = 2020-03-07T16:08:42.903Z
 authors = ["stanleynguyen"]
 tags = ["doggo", "dog", "doge", "Github", "action", "continuous delivery", "software", "devops"]
@@ -27,8 +27,8 @@ good boys to our PRs. That moment I knew exactly what my next Github Action proj
 are basically premade (with ❤️) units of work to be used GitHub workflows (think [Travis](https://travis-ci.org/)'s builds).
 Github actions can be either built with [Docker containers](https://help.github.com/en/actions/building-actions/creating-a-docker-container-action)
 or [JS/TS scripts](https://help.github.com/en/actions/building-actions/creating-a-javascript-action).
-An advantages to creating a GitHub actions with JS/TS is readily available modules
-from [GitHub toolkit](https://github.com/actions/toolkit). With these integration
+An advantage to creating a GitHub action with JS/TS is readily available modules
+from [GitHub toolkit](https://github.com/actions/toolkit). With such integration
 support, it's much easier to connect with GitHub services (C'mon 🙄 Who wanna write
 `curl` commands to make API calls). It's obvious to go with [TypeScript action template](https://github.com/actions/typescript-action).
 
@@ -107,9 +107,7 @@ dlAnchorElem.click();
 ```
 
 which basically grab `href` values from all "copy link" elements on the search
-results page, stream them to a JSON array and fill up a file for me to "download".
-
-With the data available, "generating" is simple picking a random URL from the array.
+results page, stream them to a JSON array and fill in a file for me to "download", "generating" is simply picking a random URL from the array.
 
 ```typescript
 import dogs from "./dogs.json";
